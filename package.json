@@ -1,21 +1,21 @@
 {
-  "name": "louisnovick",
+  "name": "drawable-template",
   "version": "1.0.0",
-  "description": "louisnovick",
+  "description": "draweb templates cli",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/louisnovick/Materialize-gulp"
+    "url": "https://github.com/podmaxs/drawable-template-cli"
   },
   "author": "Louis Novick",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/louisnovick/Materialize-gulp/issues"
+    "url": "https://github.com/podmaxs/drawable-template-cli/issues"
   },
-  "homepage": "https://github.com/louisnovick/Materialize-gulp",
+  "homepage": "https://github.com/podmaxs/drawable-template-cli",
   "devDependencies": {
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.4.3",
