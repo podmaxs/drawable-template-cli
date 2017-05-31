@@ -10,21 +10,29 @@
     "type": "git",
     "url": "https://github.com/podmaxs/drawable-template-cli"
   },
-  "author": "Louis Novick",
+  "author": "Maximilano Piccinini - podmaxs",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/podmaxs/drawable-template-cli/issues"
   },
   "homepage": "https://github.com/podmaxs/drawable-template-cli",
   "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.4.3",
     "gulp-connect": "^2.2.0",
     "gulp-minify-css": "^0.4.3",
     "gulp-notify": "^2.2.0",
-    "gulp-sass": "^1.3.2",
+    "gulp-npm-files": "^0.1.3",
+    "gulp-sass": "^3.1.0",
     "gulp-strip-debug": "^1.0.2",
     "gulp-uglify": "^1.1.0",
-    "gulp-util": "^3.0.2"
+    "gulp-util": "^3.0.2",
+    "gulp-jade": "^1.1.0"
+  },
+  "dependencies": {
+    "angular-material": "^1.1.4",
+    "angular-ui-router": "^1.0.3"
   }
 }

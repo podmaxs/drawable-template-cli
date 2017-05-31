@@ -1,0 +1,10 @@
+
+//IMPORT MATERIAL SCSS
+@import './../../vendor/node_modules/angular-material/angular-material.scss';
+
+//IMPORT COLORS APP
+@import './variables/colors';
+
+
+//draweb components
+@import './components/_dwNav';
