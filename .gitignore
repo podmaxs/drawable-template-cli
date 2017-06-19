@@ -1,7 +1,9 @@
 /.buildpath
 assets/build/
 node_modules
-vendor/node_modules
+gulpfile.sublime-workspace
+app/
+
 */archive/
 
 __MACOSX
