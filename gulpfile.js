@@ -31,12 +31,12 @@ var js_src      = [
 
 function buildCore(){
   return gulp.src([
-        'master/libs/angular.min.js',
+        'node_modules/angular/angular.min.js',
+        'node_modules/angular-material/angular-material.min.js',
+        'node_modules/angular-ui-router/release/angular-ui-router.min.js',
         'master/libs/angular.animate.min.js',
         'master/libs/angular.aria.min.js',
         'master/libs/angular.messages.min.js',
-        'vendor/node_modules/angular-material/angular-material.min.js',
-        'vendor/node_modules/angular-ui-router/release/angular-ui-router.min.js',
         'draweb/manifest.js',
         'draweb/modules/**/*.module.js',
         'draweb/modules/**/*.constants.js',
@@ -77,9 +77,6 @@ gulp.task('scripts-core', function() {
 
 
 gulp.task('copyNpmDependenciesAtDifferentFolder', function() {
-  gulp
-  .src(gnf(null, './package.json'), {base:'./'})
-  .pipe(gulp.dest('./vendor/'));
   return buildCore();
 });
 
@@ -87,7 +84,8 @@ gulp.task('copyNpmDependenciesAtDifferentFolder', function() {
 gulp.task('templates', function() {
   gulp.src('./master/views/**/*.jade')
     .pipe(jade({
-      client: true
+      client: false,
+      pretty: true
     }))
     .pipe(gulp.dest('./app/views/'))
 });
