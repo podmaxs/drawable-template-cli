@@ -3,6 +3,7 @@ assets/build/
 node_modules
 gulpfile.sublime-workspace
 app/
+package-lock.json
 
 */archive/
 

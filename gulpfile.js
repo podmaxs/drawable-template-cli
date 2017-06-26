@@ -32,11 +32,11 @@ var js_src      = [
 function buildCore(){
   return gulp.src([
         'node_modules/angular/angular.min.js',
+        'node_modules/angular-animate/angular-animate.min.js',
+        'node_modules/angular-aria/angular-aria.min.js',
+        'node_modules/angular-messages/angular-messages.min.js',
         'node_modules/angular-material/angular-material.min.js',
         'node_modules/angular-ui-router/release/angular-ui-router.min.js',
-        'master/libs/angular.animate.min.js',
-        'master/libs/angular.aria.min.js',
-        'master/libs/angular.messages.min.js',
         'draweb/manifest.js',
         'draweb/modules/**/*.module.js',
         'draweb/modules/**/*.constants.js',
@@ -50,7 +50,7 @@ function buildCore(){
         'draweb/modules/**/*.service.js'
       ])
       .pipe(concat('draweb.js')) // concat all files in the src
-      //.pipe(striplog())
+      .pipe(striplog())
       .pipe(uglify())           // uglify them all
       .pipe(gulp.dest(js_dest)) // save the file
       .on('error', gutil.log); 

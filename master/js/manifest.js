@@ -7,4 +7,5 @@
 				'dw.navigation',
 				'app.pages'
 			]);
+		
 	})();
